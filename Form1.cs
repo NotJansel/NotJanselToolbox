@@ -77,7 +77,7 @@ namespace Toolbox
 
         private void p_Exited(object sender, EventArgs e)
         {
-            
+             
         }
 
         void process_OutputDataReceived(object sender, DataReceivedEventArgs e)
@@ -107,19 +107,6 @@ namespace Toolbox
                     SpeedLB.Invoke(new Action(() => SpeedLB.Text = e.Data));
                 }
 
-                //var lines = FilesizeLB.Lines.Length;
-                //
-                //if (e.Data.Contains("*") && !e.Data.Contains("ETA") && lines < 4)
-                //{
-                //    FilesizeLB.Invoke(new Action(() => FilesizeLB.AppendText(Environment.NewLine)));
-                //    FilesizeLB.Invoke(new Action(() => FilesizeLB.AppendText(e.Data)));
-                //}
-                //else if (e.Data.Contains("*") && !e.Data.Contains("ETA") && lines >= 4)
-                //{
-                //    FilesizeLB.Invoke(new Action(() => FilesizeLB.Text.Remove(0, form3.FilesizeLB.Text.Length)));
-                //    FilesizeLB.Invoke(new Action(() => FilesizeLB.AppendText(Environment.NewLine)));
-                //    FilesizeLB.Invoke(new Action(() => FilesizeLB.AppendText(e.Data)));
-                //}
             }
 
         }
@@ -212,6 +199,99 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/osuSetup.exe", FolderLocation);
+        }
+
+        private void metroSwitch1_SwitchedChanged(object sender)
+        {
+            if (metroSwitch1.Switched == true)
+            {
+                LightMode(); 
+            }
+            if (metroSwitch1.Switched == false)
+            {
+                DarkMode();
+            }
+        }
+
+        private void DarkMode()
+        {
+            //Form
+            this.nightForm1.HeadColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(58)))), ((int)(((byte)(61)))));
+            this.nightForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            //Panels
+            this.nightPanel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+
+        }
+
+        private void LightMode()
+        {
+            //Form
+            this.nightForm1.HeadColor = System.Drawing.Color.Gainsboro;
+            this.nightForm1.BackColor = System.Drawing.Color.WhiteSmoke;
+            //Panels
+            this.nightPanel12.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel11.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel10.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel9.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel8.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel7.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel6.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel5.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel4.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel3.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel2.ForeColor = System.Drawing.Color.DarkGray;
+            this.nightPanel1.ForeColor = System.Drawing.Color.DarkGray;
+            //Panel Side Colors
+            this.nightPanel12.LeftSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel11.LeftSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel10.LeftSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel9.LeftSideColor =  System.Drawing.Color.DarkGray;
+            this.nightPanel8.LeftSideColor =  System.Drawing.Color.DarkGray;
+            this.nightPanel7.LeftSideColor =  System.Drawing.Color.DarkGray;
+            this.nightPanel6.LeftSideColor =  System.Drawing.Color.DarkGray;
+            this.nightPanel5.LeftSideColor =  System.Drawing.Color.DarkGray;
+            this.nightPanel4.LeftSideColor =  System.Drawing.Color.DarkGray;
+            this.nightPanel3.LeftSideColor =  System.Drawing.Color.DarkGray;
+            this.nightPanel2.LeftSideColor =  System.Drawing.Color.DarkGray;
+            this.nightPanel1.LeftSideColor =  System.Drawing.Color.DarkGray;
+            this.nightPanel12.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel11.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel10.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel9.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel8.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel7.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel6.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel5.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel4.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel3.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel2.RightSideColor = System.Drawing.Color.DarkGray;
+            this.nightPanel1.RightSideColor = System.Drawing.Color.DarkGray;
+            //Panel Side Change
+            this.nightPanel12.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel11.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel10.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel9.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel8.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel7.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel6.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel5.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel4.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel3.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel2.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel1.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+
+
         }
     }
 }

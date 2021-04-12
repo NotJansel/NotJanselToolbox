@@ -30,6 +30,9 @@ namespace Toolbox
         private void InitializeComponent()
         {
             this.nightForm1 = new ReaLTaiizor.Forms.NightForm();
+            this.nightPanel12 = new ReaLTaiizor.Controls.NightPanel();
+            this.nightButton11 = new ReaLTaiizor.Controls.NightButton();
+            this.nightLabel11 = new ReaLTaiizor.Controls.NightLabel();
             this.nightPanel11 = new ReaLTaiizor.Controls.NightPanel();
             this.nightButton10 = new ReaLTaiizor.Controls.NightButton();
             this.nightLabel10 = new ReaLTaiizor.Controls.NightLabel();
@@ -65,10 +68,11 @@ namespace Toolbox
             this.nightButton1 = new ReaLTaiizor.Controls.NightButton();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
-            this.nightPanel12 = new ReaLTaiizor.Controls.NightPanel();
-            this.nightButton11 = new ReaLTaiizor.Controls.NightButton();
-            this.nightLabel11 = new ReaLTaiizor.Controls.NightLabel();
+            this.metroSwitch1 = new ReaLTaiizor.Controls.MetroSwitch();
+            this.nightLabel12 = new ReaLTaiizor.Controls.NightLabel();
+            this.nightLabel13 = new ReaLTaiizor.Controls.NightLabel();
             this.nightForm1.SuspendLayout();
+            this.nightPanel12.SuspendLayout();
             this.nightPanel11.SuspendLayout();
             this.nightPanel10.SuspendLayout();
             this.nightPanel9.SuspendLayout();
@@ -80,12 +84,14 @@ namespace Toolbox
             this.nightPanel3.SuspendLayout();
             this.nightPanel2.SuspendLayout();
             this.nightPanel1.SuspendLayout();
-            this.nightPanel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // nightForm1
             // 
             this.nightForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.nightForm1.Controls.Add(this.nightLabel13);
+            this.nightForm1.Controls.Add(this.nightLabel12);
+            this.nightForm1.Controls.Add(this.metroSwitch1);
             this.nightForm1.Controls.Add(this.nightPanel12);
             this.nightForm1.Controls.Add(this.nightPanel11);
             this.nightForm1.Controls.Add(this.nightPanel10);
@@ -113,6 +119,56 @@ namespace Toolbox
             this.nightForm1.Text = "NotJansel Toolbox";
             this.nightForm1.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Left;
             this.nightForm1.TitleBarTextColor = System.Drawing.Color.Gainsboro;
+            // 
+            // nightPanel12
+            // 
+            this.nightPanel12.Controls.Add(this.nightButton11);
+            this.nightPanel12.Controls.Add(this.nightLabel11);
+            this.nightPanel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel12.LeftSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel12.Location = new System.Drawing.Point(12, 265);
+            this.nightPanel12.Name = "nightPanel12";
+            this.nightPanel12.RightSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel12.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
+            this.nightPanel12.Size = new System.Drawing.Size(166, 104);
+            this.nightPanel12.TabIndex = 2;
+            // 
+            // nightButton11
+            // 
+            this.nightButton11.BackColor = System.Drawing.Color.Transparent;
+            this.nightButton11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.nightButton11.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.nightButton11.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.nightButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton11.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton11.HoverForeColor = System.Drawing.Color.White;
+            this.nightButton11.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+            this.nightButton11.Location = new System.Drawing.Point(12, 40);
+            this.nightButton11.MinimumSize = new System.Drawing.Size(144, 47);
+            this.nightButton11.Name = "nightButton11";
+            this.nightButton11.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton11.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+            this.nightButton11.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton11.PressedForeColor = System.Drawing.Color.White;
+            this.nightButton11.Radius = 20;
+            this.nightButton11.Size = new System.Drawing.Size(144, 47);
+            this.nightButton11.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+            this.nightButton11.TabIndex = 1;
+            this.nightButton11.Text = "Download";
+            this.nightButton11.Click += new System.EventHandler(this.nightButton11_Click);
+            // 
+            // nightLabel11
+            // 
+            this.nightLabel11.AutoSize = true;
+            this.nightLabel11.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nightLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel11.Location = new System.Drawing.Point(62, 16);
+            this.nightLabel11.Name = "nightLabel11";
+            this.nightLabel11.Size = new System.Drawing.Size(40, 21);
+            this.nightLabel11.TabIndex = 0;
+            this.nightLabel11.Text = "osu!";
+            this.nightLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // nightPanel11
             // 
@@ -270,7 +326,7 @@ namespace Toolbox
             this.nightPanel8.Controls.Add(this.nightLabel7);
             this.nightPanel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel8.LeftSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel8.Location = new System.Drawing.Point(1044, 45);
+            this.nightPanel8.Location = new System.Drawing.Point(356, 45);
             this.nightPanel8.Name = "nightPanel8";
             this.nightPanel8.RightSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel8.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
@@ -320,7 +376,7 @@ namespace Toolbox
             this.nightPanel7.Controls.Add(this.nightLabel6);
             this.nightPanel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel7.LeftSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel7.Location = new System.Drawing.Point(872, 45);
+            this.nightPanel7.Location = new System.Drawing.Point(700, 155);
             this.nightPanel7.Name = "nightPanel7";
             this.nightPanel7.RightSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel7.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
@@ -370,7 +426,7 @@ namespace Toolbox
             this.nightPanel6.Controls.Add(this.nightLabel5);
             this.nightPanel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel6.LeftSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel6.Location = new System.Drawing.Point(700, 45);
+            this.nightPanel6.Location = new System.Drawing.Point(184, 265);
             this.nightPanel6.Name = "nightPanel6";
             this.nightPanel6.RightSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel6.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
@@ -420,7 +476,7 @@ namespace Toolbox
             this.nightPanel5.Controls.Add(this.nightLabel4);
             this.nightPanel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel5.LeftSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel5.Location = new System.Drawing.Point(528, 45);
+            this.nightPanel5.Location = new System.Drawing.Point(528, 155);
             this.nightPanel5.Name = "nightPanel5";
             this.nightPanel5.RightSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel5.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
@@ -470,7 +526,7 @@ namespace Toolbox
             this.nightPanel4.Controls.Add(this.nightLabel3);
             this.nightPanel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel4.LeftSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel4.Location = new System.Drawing.Point(356, 45);
+            this.nightPanel4.Location = new System.Drawing.Point(184, 45);
             this.nightPanel4.Name = "nightPanel4";
             this.nightPanel4.RightSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel4.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
@@ -520,7 +576,7 @@ namespace Toolbox
             this.nightPanel3.Controls.Add(this.nightLabel2);
             this.nightPanel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel3.LeftSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel3.Location = new System.Drawing.Point(184, 45);
+            this.nightPanel3.Location = new System.Drawing.Point(12, 45);
             this.nightPanel3.Name = "nightPanel3";
             this.nightPanel3.RightSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel3.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
@@ -613,7 +669,7 @@ namespace Toolbox
             this.nightPanel1.Controls.Add(this.nightLabel1);
             this.nightPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel1.LeftSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel1.Location = new System.Drawing.Point(12, 45);
+            this.nightPanel1.Location = new System.Drawing.Point(1102, 562);
             this.nightPanel1.Name = "nightPanel1";
             this.nightPanel1.RightSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
             this.nightPanel1.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
@@ -681,55 +737,55 @@ namespace Toolbox
             this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
             this.nightControlBox1.TabIndex = 0;
             // 
-            // nightPanel12
+            // metroSwitch1
             // 
-            this.nightPanel12.Controls.Add(this.nightButton11);
-            this.nightPanel12.Controls.Add(this.nightLabel11);
-            this.nightPanel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel12.LeftSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel12.Location = new System.Drawing.Point(528, 155);
-            this.nightPanel12.Name = "nightPanel12";
-            this.nightPanel12.RightSideColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel12.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Left;
-            this.nightPanel12.Size = new System.Drawing.Size(166, 104);
-            this.nightPanel12.TabIndex = 2;
+            this.metroSwitch1.BackColor = System.Drawing.Color.Transparent;
+            this.metroSwitch1.BackgroundColor = System.Drawing.Color.Empty;
+            this.metroSwitch1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(159)))), ((int)(((byte)(147)))));
+            this.metroSwitch1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.metroSwitch1.CheckState = ReaLTaiizor.Enum.Metro.CheckState.Unchecked;
+            this.metroSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroSwitch1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.metroSwitch1.DisabledCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.metroSwitch1.DisabledUnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.metroSwitch1.IsDerivedStyle = true;
+            this.metroSwitch1.Location = new System.Drawing.Point(101, 644);
+            this.metroSwitch1.Name = "metroSwitch1";
+            this.metroSwitch1.Size = new System.Drawing.Size(58, 22);
+            this.metroSwitch1.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.metroSwitch1.StyleManager = null;
+            this.metroSwitch1.Switched = false;
+            this.metroSwitch1.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
+            this.metroSwitch1.TabIndex = 10;
+            this.metroSwitch1.Text = "metroSwitch1";
+            this.metroSwitch1.ThemeAuthor = "Taiizor";
+            this.metroSwitch1.ThemeName = "MetroLight";
+            this.metroSwitch1.UnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSwitch1.SwitchedChanged += new ReaLTaiizor.Controls.MetroSwitch.SwitchedChangedEventHandler(this.metroSwitch1_SwitchedChanged);
             // 
-            // nightButton11
+            // nightLabel12
             // 
-            this.nightButton11.BackColor = System.Drawing.Color.Transparent;
-            this.nightButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nightButton11.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.nightButton11.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.nightButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.nightButton11.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.nightButton11.HoverForeColor = System.Drawing.Color.White;
-            this.nightButton11.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            this.nightButton11.Location = new System.Drawing.Point(12, 40);
-            this.nightButton11.MinimumSize = new System.Drawing.Size(144, 47);
-            this.nightButton11.Name = "nightButton11";
-            this.nightButton11.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.nightButton11.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-            this.nightButton11.PressedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
-            this.nightButton11.PressedForeColor = System.Drawing.Color.White;
-            this.nightButton11.Radius = 20;
-            this.nightButton11.Size = new System.Drawing.Size(144, 47);
-            this.nightButton11.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-            this.nightButton11.TabIndex = 1;
-            this.nightButton11.Text = "Download";
-            this.nightButton11.Click += new System.EventHandler(this.nightButton11_Click);
+            this.nightLabel12.AutoSize = true;
+            this.nightLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nightLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel12.Location = new System.Drawing.Point(12, 643);
+            this.nightLabel12.Name = "nightLabel12";
+            this.nightLabel12.Size = new System.Drawing.Size(83, 20);
+            this.nightLabel12.TabIndex = 11;
+            this.nightLabel12.Text = "Dark Mode";
             // 
-            // nightLabel11
+            // nightLabel13
             // 
-            this.nightLabel11.AutoSize = true;
-            this.nightLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nightLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel11.Location = new System.Drawing.Point(62, 16);
-            this.nightLabel11.Name = "nightLabel11";
-            this.nightLabel11.Size = new System.Drawing.Size(40, 21);
-            this.nightLabel11.TabIndex = 0;
-            this.nightLabel11.Text = "osu!";
-            this.nightLabel11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.nightLabel13.AutoSize = true;
+            this.nightLabel13.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nightLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel13.Location = new System.Drawing.Point(165, 643);
+            this.nightLabel13.Name = "nightLabel13";
+            this.nightLabel13.Size = new System.Drawing.Size(85, 20);
+            this.nightLabel13.TabIndex = 12;
+            this.nightLabel13.Text = "Light Mode";
             // 
             // Form1
             // 
@@ -746,6 +802,9 @@ namespace Toolbox
             this.Text = "NotJansel Toolbox";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.nightForm1.ResumeLayout(false);
+            this.nightForm1.PerformLayout();
+            this.nightPanel12.ResumeLayout(false);
+            this.nightPanel12.PerformLayout();
             this.nightPanel11.ResumeLayout(false);
             this.nightPanel11.PerformLayout();
             this.nightPanel10.ResumeLayout(false);
@@ -768,8 +827,6 @@ namespace Toolbox
             this.nightPanel2.PerformLayout();
             this.nightPanel1.ResumeLayout(false);
             this.nightPanel1.PerformLayout();
-            this.nightPanel12.ResumeLayout(false);
-            this.nightPanel12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -815,6 +872,9 @@ namespace Toolbox
         private ReaLTaiizor.Controls.NightPanel nightPanel12;
         private ReaLTaiizor.Controls.NightButton nightButton11;
         private ReaLTaiizor.Controls.NightLabel nightLabel11;
+        private ReaLTaiizor.Controls.MetroSwitch metroSwitch1;
+        private ReaLTaiizor.Controls.NightLabel nightLabel12;
+        private ReaLTaiizor.Controls.NightLabel nightLabel13;
     }
 }
 
