@@ -216,21 +216,61 @@ namespace Toolbox
         private void DarkMode()
         {
             //Form
-            this.nightForm1.HeadColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(58)))), ((int)(((byte)(61)))));
-            this.nightForm1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.nightForm1.HeadColor = Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(58)))), ((int)(((byte)(61)))));
+            this.nightForm1.BackColor = Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(48)))), ((int)(((byte)(51)))));
+            this.nightForm1.TitleBarTextColor = Color.Gainsboro;
             //Panels
-            this.nightPanel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
-            this.nightPanel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel12.ForeColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel11.ForeColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel10.ForeColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel9.ForeColor = Color. FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel8.ForeColor = Color. FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel7.ForeColor = Color. FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel6.ForeColor = Color. FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel5.ForeColor = Color. FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel4.ForeColor = Color. FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel3.ForeColor = Color. FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel2.ForeColor = Color. FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel1.ForeColor = Color. FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            //Panel Side Colors
+            this.nightPanel12.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel11.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel10.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel9.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel8.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel7.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel6.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel5.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel4.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel3.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel2.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel1.LeftSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel12.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel11.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel10.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel9.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel8.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel7.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel6.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel5.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel4.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel3.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel2.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            this.nightPanel1.RightSideColor = Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(61)))));
+            //Panel Side Change
+            this.nightPanel12.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel11.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel10.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel9.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel8.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel7.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel6.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel5.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel4.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel3.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel2.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            this.nightPanel1.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            
 
         }
 
@@ -239,6 +279,7 @@ namespace Toolbox
             //Form
             this.nightForm1.HeadColor = System.Drawing.Color.Gainsboro;
             this.nightForm1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.nightForm1.TitleBarTextColor = System.Drawing.Color.Black;
             //Panels
             this.nightPanel12.ForeColor = System.Drawing.Color.DarkGray;
             this.nightPanel11.ForeColor = System.Drawing.Color.DarkGray;
