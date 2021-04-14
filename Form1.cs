@@ -270,6 +270,29 @@ namespace Toolbox
             this.nightPanel3.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
             this.nightPanel2.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
             this.nightPanel1.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
+            //Buttons
+            this.nightButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton11.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton10.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton9.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton8.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton7.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton6.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton5.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton4.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton3.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton2.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
+            this.nightButton1.NormalBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(93)))), ((int)(((byte)(89)))));
             
 
         }
@@ -331,8 +354,30 @@ namespace Toolbox
             this.nightPanel3.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
             this.nightPanel2.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
             this.nightPanel1.Side = ReaLTaiizor.Controls.NightPanel.PanelSide.Right;
-
-
+            //Buttons
+            this.nightButton11.ForeColor =       Color.SkyBlue;
+            this.nightButton10.ForeColor =       Color.SkyBlue;
+            this.nightButton9.ForeColor =        Color.SkyBlue;
+            this.nightButton8.ForeColor =        Color.SkyBlue;
+            this.nightButton7.ForeColor =        Color.SkyBlue;
+            this.nightButton6.ForeColor =        Color.SkyBlue;
+            this.nightButton5.ForeColor =        Color.SkyBlue;
+            this.nightButton4.ForeColor =        Color.SkyBlue;
+            this.nightButton3.ForeColor =        Color.SkyBlue;
+            this.nightButton2.ForeColor =        Color.SkyBlue;
+            this.nightButton1.ForeColor =        Color.SkyBlue;
+            this.nightButton11.NormalBackColor = Color.SkyBlue;
+            this.nightButton10.NormalBackColor = Color.SkyBlue;
+            this.nightButton9.NormalBackColor =  Color.SkyBlue;
+            this.nightButton8.NormalBackColor =  Color.SkyBlue;
+            this.nightButton7.NormalBackColor =  Color.SkyBlue;
+            this.nightButton6.NormalBackColor =  Color.SkyBlue;
+            this.nightButton5.NormalBackColor =  Color.SkyBlue;
+            this.nightButton4.NormalBackColor =  Color.SkyBlue;
+            this.nightButton3.NormalBackColor =  Color.SkyBlue;
+            this.nightButton2.NormalBackColor =  Color.SkyBlue;
+            this.nightButton1.NormalBackColor =  Color.SkyBlue;
+            
         }
     }
 }

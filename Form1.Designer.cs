@@ -30,6 +30,9 @@ namespace Toolbox
         private void InitializeComponent()
         {
             this.nightForm1 = new ReaLTaiizor.Forms.NightForm();
+            this.nightLabel13 = new ReaLTaiizor.Controls.NightLabel();
+            this.nightLabel12 = new ReaLTaiizor.Controls.NightLabel();
+            this.metroSwitch1 = new ReaLTaiizor.Controls.MetroSwitch();
             this.nightPanel12 = new ReaLTaiizor.Controls.NightPanel();
             this.nightButton11 = new ReaLTaiizor.Controls.NightButton();
             this.nightLabel11 = new ReaLTaiizor.Controls.NightLabel();
@@ -68,9 +71,6 @@ namespace Toolbox
             this.nightButton1 = new ReaLTaiizor.Controls.NightButton();
             this.nightLabel1 = new ReaLTaiizor.Controls.NightLabel();
             this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
-            this.metroSwitch1 = new ReaLTaiizor.Controls.MetroSwitch();
-            this.nightLabel12 = new ReaLTaiizor.Controls.NightLabel();
-            this.nightLabel13 = new ReaLTaiizor.Controls.NightLabel();
             this.nightForm1.SuspendLayout();
             this.nightPanel12.SuspendLayout();
             this.nightPanel11.SuspendLayout();
@@ -119,6 +119,56 @@ namespace Toolbox
             this.nightForm1.Text = "NotJansel Toolbox";
             this.nightForm1.TextAlignment = ReaLTaiizor.Forms.NightForm.Alignment.Left;
             this.nightForm1.TitleBarTextColor = System.Drawing.Color.Gainsboro;
+            // 
+            // nightLabel13
+            // 
+            this.nightLabel13.AutoSize = true;
+            this.nightLabel13.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nightLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel13.Location = new System.Drawing.Point(165, 643);
+            this.nightLabel13.Name = "nightLabel13";
+            this.nightLabel13.Size = new System.Drawing.Size(85, 20);
+            this.nightLabel13.TabIndex = 12;
+            this.nightLabel13.Text = "Light Mode";
+            // 
+            // nightLabel12
+            // 
+            this.nightLabel12.AutoSize = true;
+            this.nightLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.nightLabel12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nightLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
+            this.nightLabel12.Location = new System.Drawing.Point(12, 643);
+            this.nightLabel12.Name = "nightLabel12";
+            this.nightLabel12.Size = new System.Drawing.Size(83, 20);
+            this.nightLabel12.TabIndex = 11;
+            this.nightLabel12.Text = "Dark Mode";
+            // 
+            // metroSwitch1
+            // 
+            this.metroSwitch1.BackColor = System.Drawing.Color.Transparent;
+            this.metroSwitch1.BackgroundColor = System.Drawing.Color.Empty;
+            this.metroSwitch1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(159)))), ((int)(((byte)(147)))));
+            this.metroSwitch1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.metroSwitch1.CheckState = ReaLTaiizor.Enum.Metro.CheckState.Unchecked;
+            this.metroSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroSwitch1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.metroSwitch1.DisabledCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
+            this.metroSwitch1.DisabledUnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
+            this.metroSwitch1.IsDerivedStyle = true;
+            this.metroSwitch1.Location = new System.Drawing.Point(101, 644);
+            this.metroSwitch1.Name = "metroSwitch1";
+            this.metroSwitch1.Size = new System.Drawing.Size(58, 22);
+            this.metroSwitch1.Style = ReaLTaiizor.Enum.Metro.Style.Light;
+            this.metroSwitch1.StyleManager = null;
+            this.metroSwitch1.Switched = false;
+            this.metroSwitch1.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
+            this.metroSwitch1.TabIndex = 10;
+            this.metroSwitch1.Text = "metroSwitch1";
+            this.metroSwitch1.ThemeAuthor = "Taiizor";
+            this.metroSwitch1.ThemeName = "MetroLight";
+            this.metroSwitch1.UnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
+            this.metroSwitch1.SwitchedChanged += new ReaLTaiizor.Controls.MetroSwitch.SwitchedChangedEventHandler(this.metroSwitch1_SwitchedChanged);
             // 
             // nightPanel12
             // 
@@ -736,56 +786,6 @@ namespace Toolbox
             this.nightControlBox1.Name = "nightControlBox1";
             this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
             this.nightControlBox1.TabIndex = 0;
-            // 
-            // metroSwitch1
-            // 
-            this.metroSwitch1.BackColor = System.Drawing.Color.Transparent;
-            this.metroSwitch1.BackgroundColor = System.Drawing.Color.Empty;
-            this.metroSwitch1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(159)))), ((int)(((byte)(147)))));
-            this.metroSwitch1.CheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.metroSwitch1.CheckState = ReaLTaiizor.Enum.Metro.CheckState.Unchecked;
-            this.metroSwitch1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroSwitch1.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.metroSwitch1.DisabledCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(65)))), ((int)(((byte)(177)))), ((int)(((byte)(225)))));
-            this.metroSwitch1.DisabledUnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))), ((int)(((byte)(205)))));
-            this.metroSwitch1.IsDerivedStyle = true;
-            this.metroSwitch1.Location = new System.Drawing.Point(101, 644);
-            this.metroSwitch1.Name = "metroSwitch1";
-            this.metroSwitch1.Size = new System.Drawing.Size(58, 22);
-            this.metroSwitch1.Style = ReaLTaiizor.Enum.Metro.Style.Light;
-            this.metroSwitch1.StyleManager = null;
-            this.metroSwitch1.Switched = false;
-            this.metroSwitch1.SymbolColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(92)))), ((int)(((byte)(92)))));
-            this.metroSwitch1.TabIndex = 10;
-            this.metroSwitch1.Text = "metroSwitch1";
-            this.metroSwitch1.ThemeAuthor = "Taiizor";
-            this.metroSwitch1.ThemeName = "MetroLight";
-            this.metroSwitch1.UnCheckColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(155)))), ((int)(((byte)(155)))));
-            this.metroSwitch1.SwitchedChanged += new ReaLTaiizor.Controls.MetroSwitch.SwitchedChangedEventHandler(this.metroSwitch1_SwitchedChanged);
-            // 
-            // nightLabel12
-            // 
-            this.nightLabel12.AutoSize = true;
-            this.nightLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nightLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel12.Location = new System.Drawing.Point(12, 643);
-            this.nightLabel12.Name = "nightLabel12";
-            this.nightLabel12.Size = new System.Drawing.Size(83, 20);
-            this.nightLabel12.TabIndex = 11;
-            this.nightLabel12.Text = "Dark Mode";
-            // 
-            // nightLabel13
-            // 
-            this.nightLabel13.AutoSize = true;
-            this.nightLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.nightLabel13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nightLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(118)))), ((int)(((byte)(127)))));
-            this.nightLabel13.Location = new System.Drawing.Point(165, 643);
-            this.nightLabel13.Name = "nightLabel13";
-            this.nightLabel13.Size = new System.Drawing.Size(85, 20);
-            this.nightLabel13.TabIndex = 12;
-            this.nightLabel13.Text = "Light Mode";
             // 
             // Form1
             // 
