@@ -801,6 +801,7 @@ namespace Toolbox
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NotJansel Toolbox";
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.nightForm1.ResumeLayout(false);
             this.nightForm1.PerformLayout();
             this.nightPanel12.ResumeLayout(false);

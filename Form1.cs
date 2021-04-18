@@ -25,18 +25,20 @@ namespace Toolbox
         public Form1()
         {
             InitializeComponent();
-            Directory.CreateDirectory(FolderLocation + @"");
+            Directory.CreateDirectory(FolderLocation);
             this.MinimumSize = this.Size;
             this.MaximumSize = this.Size;
+            MessageBox.Show("This Message is shown on every startup\n\nWhen you Close this program, the temporary Installationfiles will get deleted.\n\nwith kind regards, NotJansel (Developer)");
         }
 
         private void nightButton1_Click(object sender, EventArgs e)
         {
-            if (File.Exists(FolderLocation + @"\TestFile.bin"))
-            {
-                return;
-            }
-            DownloadFile("OneDrive5TB:Software/TestFile.bin", FolderLocation);
+            //if (File.Exists(FolderLocation + @"\TestFile.bin"))
+            //{
+            //    return;
+            //}
+            //DownloadFile("OneDrive5TB:Software/TestFile.bin", FolderLocation);
+            MessageBox.Show("Testfile will be added later.");
         }
 
         
@@ -118,6 +120,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/ChromeSetup.exe", FolderLocation);
+            StartInstall("ChromeSetup.exe");
         }
 
         private void nightButton3_Click(object sender, EventArgs e)
@@ -127,6 +130,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/FirefoxSetup.exe", FolderLocation);
+            StartInstall("FirefoxSetup.exe");
         }
 
         private void nightButton4_Click(object sender, EventArgs e)
@@ -136,6 +140,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/SteamSetup.exe", FolderLocation);
+            StartInstall("SteamSetup.exe");
         }
 
         private void nightButton5_Click(object sender, EventArgs e)
@@ -145,6 +150,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/MinecraftInstaller.msi", FolderLocation);
+            StartInstall("MinecraftInstaller.msi");
         }
 
         private void nightButton6_Click(object sender, EventArgs e)
@@ -154,6 +160,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/SpotifySetup.exe", FolderLocation);
+            StartInstall("SpotifySetup.exe");
         }
 
         private void nightButton7_Click(object sender, EventArgs e)
@@ -163,6 +170,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/BraveBrowserSetup.exe", FolderLocation);
+            StartInstall("BraveBrowserSetup.exe");
         }
 
         private void nightButton8_Click(object sender, EventArgs e)
@@ -172,6 +180,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/DiscordSetup.exe", FolderLocation);
+            StartInstall("DiscordSetup.exe");
         }
 
         private void nightButton9_Click(object sender, EventArgs e)
@@ -181,6 +190,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/7ZipSetup.exe", FolderLocation);
+            StartInstall("7ZipSetup.exe");
         }
 
         private void nightButton10_Click(object sender, EventArgs e)
@@ -190,6 +200,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/NPPSetup.exe", FolderLocation);
+            StartInstall("NPPSetup.exe");
         }
 
         private void nightButton11_Click(object sender, EventArgs e)
@@ -199,6 +210,7 @@ namespace Toolbox
                 return;
             }
             DownloadFile("OneDrive5TB:Software/osuSetup.exe", FolderLocation);
+            StartInstall("osuSetup.exe");
         }
 
         private void metroSwitch1_SwitchedChanged(object sender)
@@ -212,6 +224,32 @@ namespace Toolbox
                 DarkMode();
             }
         }
+
+        private void StartInstall(string filename)
+        {
+            while (true)
+            {
+                if (Process.GetProcessesByName("downloader").Length > 0)
+                {
+                     
+                }
+                else
+                {
+                    Process process = new Process();
+                    process.StartInfo.FileName = FolderLocation + filename;
+                    process.Exited += (sender, e) => Process_Exited(sender, e, filename);
+                    process.EnableRaisingEvents = true;
+                    process.Start();
+                    return;
+                }
+            }
+        }
+
+        void Process_Exited(object sender, EventArgs e, string filename)
+        {
+            File.Delete(FolderLocation + filename);
+        }
+
 
         private void DarkMode()
         {
@@ -378,6 +416,11 @@ namespace Toolbox
             this.nightButton2.NormalBackColor =  Color.DeepSkyBlue;
             this.nightButton1.NormalBackColor =  Color.DeepSkyBlue;
             
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Directory.Delete(FolderLocation, true);
         }
     }
 }
