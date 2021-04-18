@@ -29,6 +29,7 @@ namespace Toolbox
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.nightForm1 = new ReaLTaiizor.Forms.NightForm();
             this.nightLabel13 = new ReaLTaiizor.Controls.NightLabel();
             this.nightLabel12 = new ReaLTaiizor.Controls.NightLabel();
@@ -795,6 +796,7 @@ namespace Toolbox
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.nightForm1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1280, 720);
             this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "Form1";
